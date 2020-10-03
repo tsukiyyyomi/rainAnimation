@@ -13,7 +13,8 @@ function createRain(){
         x = document.documentElement.clientWidth-10;
         y = document.documentElement.clientHeight -100;
         for(let i = 0; i < frames.length; i++){
-            frames[i].setAttribute("style", "position:absolute; background:#fff; height:100px; width:1px; left:" + 
+            frames[i].className = 'drop';
+            frames[i].setAttribute("style", "height:" + Math.random()*100 + "px;left:" + 
             Math.random()*x + "px;top:" + Math.random() * y + "px;opacity:"+ Math.random()* 1);
             
         }
