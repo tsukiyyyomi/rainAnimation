@@ -14,10 +14,14 @@ function createRain(){
         y = document.documentElement.clientHeight -100;
         for(let i = 0; i < frames.length; i++){
             frames[i].className = 'drop';
-            frames[i].setAttribute("style", "height:" + Math.random()*100 + "px;left:" + 
-            Math.random()*x + "px;top:" + Math.random() * y + "px;opacity:"+ Math.random()* 1);
-            
+            frames[i].setAttribute("style", "height:" +
+            Math.random()* (150-50) + 50 + "px;left:" + 
+            Math.random()*x + "px;top:" + 
+            Math.random() * y + "px;opacity:"+ 
+            Math.random()* 1);            
         }
-    },1)
+    },10)
 
 }
+
+//window.onload = alert(Math.random()* (100-50) + 50)
