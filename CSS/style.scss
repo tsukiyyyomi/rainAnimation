@@ -1,0 +1,28 @@
+@keyframes fall{
+    to{
+        margin-top:900px;
+    }
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+html{
+    min-height:100vh;
+}
+body{
+    background: linear-gradient( rgba(25, 35, 39, 0.61),rgba(18, 91, 122, 0.685));
+    min-height:100vh;
+}
+
+.drop{
+    background: #fff;
+    width:1px;
+    height: 89px;
+    position: absolute;
+    bottom:200px;
+    animation: fall 603ms linear infinite;
+}
+

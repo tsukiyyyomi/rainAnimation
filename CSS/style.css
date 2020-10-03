@@ -1,0 +1,37 @@
+@-webkit-keyframes fall {
+  to {
+    margin-top: 900px;
+  }
+}
+
+@keyframes fall {
+  to {
+    margin-top: 900px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 35, 39, 0.61)), to(rgba(18, 91, 122, 0.685)));
+  background: linear-gradient(rgba(25, 35, 39, 0.61), rgba(18, 91, 122, 0.685));
+  min-height: 100vh;
+}
+
+.drop {
+  background: #fff;
+  width: 1px;
+  height: 89px;
+  position: absolute;
+  bottom: 200px;
+  -webkit-animation: fall 603ms linear infinite;
+          animation: fall 603ms linear infinite;
+}
+/*# sourceMappingURL=style.css.map */
